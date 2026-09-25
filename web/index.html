@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FinPilot Support Assistant</title>
+<meta name="description" content="Agentic RAG customer-support chatbot for a demo retail bank: guardrails, intent routing, payment calculators and grounded answers with sources.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<!--BODY-->
+<header class="topbar">
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M9 23V9h10M9 16h7" stroke="var(--on-accent)" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="21.5" r="3" fill="var(--brass)"/></svg>
+    <div>
+      <div class="brand-name">FinPilot</div>
+      <div class="brand-sub">Customer Support Assistant</div>
+    </div>
+  </div>
+  <div class="top-actions">
+    <span class="mode" id="mode" title="Where answers are being computed"><span class="dot"></span><span id="mode-text">Starting…</span></span>
+    <button class="btn ghost only-narrow" id="open-rail" type="button" aria-controls="rail">Topics</button>
+    <button class="btn ghost only-mid" id="open-inspector" type="button" aria-controls="inspector">Inspector</button>
+    <button class="btn ghost" id="new-chat" type="button" aria-label="New chat"><span aria-hidden="true" class="plus">+</span><span class="hide-xs">New chat</span></button>
+    <a class="btn ghost hide-xs" id="repo-link" href="https://github.com/pavanakki54-bit/finpilot" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      <span class="hide-xs">Source</span>
+    </a>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="rail panel" id="rail" aria-label="Topics and pipeline">
+    <button class="btn ghost close only-narrow" type="button" data-close="rail">Close</button>
+    <section>
+      <h2 class="label">Ask about</h2>
+      <div class="topics" id="topics"></div>
+    </section>
+    <section>
+      <h2 class="label">How your message is handled</h2>
+      <ol class="pipeline" id="pipeline">
+        <li data-node="guard_input"><b>Guardrails</b><span>Redacts card numbers, SSNs and passwords; blocks prompt injection</span></li>
+        <li data-node="classify"><b>Intent router</b><span>Picks a tool, a calculator or knowledge search</span></li>
+        <li data-node="tool"><b>Tools</b><span>Exact calculators, demo account actions, support tickets</span></li>
+        <li data-node="rag"><b>Knowledge search</b><span>TF-IDF retrieval over the bank's FAQ, answers cite sources</span></li>
+        <li data-node="finalize"><b>Output check</b><span>Adds disclaimers, masks any sensitive numbers</span></li>
+      </ol>
+    </section>
+    <div class="fineprint">
+      <p id="disclaimer">FinPilot Bank is a fictional institution. Rates, fees and account data are sample data.</p>
+      <p>Built by Pavan A · <a id="rail-repo" href="https://github.com/pavanakki54-bit/finpilot" target="_blank" rel="noopener">View source on GitHub</a></p>
+    </div>
+  </aside>
+
+  <main class="chat" aria-label="Conversation">
+    <div class="log" id="log" role="log" aria-live="polite"></div>
+    <div class="composer-wrap">
+      <div class="chips" id="suggestions" aria-label="Suggested questions"></div>
+      <form class="composer" id="composer" autocomplete="off">
+        <label class="sr-only" for="input">Your question</label>
+        <textarea id="input" rows="1" maxlength="2000" placeholder="Ask about cards, transfers, loans, fees…"></textarea>
+        <button class="send" type="submit" id="send" aria-label="Send">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <p class="hint">Never share full card numbers, SSNs, passwords or one-time codes. FinPilot will never ask for them.</p>
+    </div>
+  </main>
+
+  <aside class="inspector panel" id="inspector" aria-label="Agent inspector">
+    <button class="btn ghost close only-mid" type="button" data-close="inspector">Close</button>
+    <h2 class="label">Last response</h2>
+    <div id="inspect-body"><p class="muted">Send a message to see how the agent handled it.</p></div>
+  </aside>
+</div>
+<div class="backdrop" id="backdrop" hidden></div>
+
+<!--/BODY-->
+<script src="assets/config.js"></script>
+<script src="assets/stopwords.js"></script>
+<script src="assets/engine.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

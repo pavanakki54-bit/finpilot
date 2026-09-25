@@ -1,0 +1,17 @@
+# One-click deploy of the full stack (API + UI) on Render's free tier.
+# Render dashboard -> New -> Blueprint -> pick this repo.
+services:
+  - type: web
+    name: finpilot
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: LLM_API_KEY      # optional: leave empty for grounded extractive answers
+        sync: false
+      - key: LLM_BASE_URL
+        value: https://api.openai.com/v1
+      - key: LLM_MODEL
+        value: gpt-4o-mini
+      - key: CORS_ORIGINS
+        value: "*"

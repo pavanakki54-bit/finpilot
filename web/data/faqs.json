@@ -1,0 +1,648 @@
+{
+  "bank_name": "FinPilot Bank",
+  "disclaimer": "FinPilot Bank is a fictional institution used for demonstration. Rates, fees and policies are sample data.",
+  "support": {
+    "phone": "1-800-555-0199 (demo)",
+    "hours": "Mon–Fri 8am–8pm ET, Sat 9am–5pm ET",
+    "fraud_line": "1-800-555-0142 (24/7, demo)"
+  },
+  "faqs": [
+    {
+      "id": "acct-open",
+      "category": "Accounts",
+      "question": "How do I open a checking or savings account?",
+      "answer": "You can open an account online in about 10 minutes. You'll need a government-issued photo ID, your Social Security Number or ITIN, a U.S. residential address, and an initial deposit (as low as $25 for Everyday Checking). Go to Open an Account in the app or website, pick the account type, and follow the verification steps.",
+      "tags": [
+        "open account",
+        "new account",
+        "sign up",
+        "requirements",
+        "documents",
+        "checking",
+        "savings"
+      ]
+    },
+    {
+      "id": "acct-types",
+      "category": "Accounts",
+      "question": "What types of accounts do you offer?",
+      "answer": "We offer Everyday Checking (no minimum balance with $500 direct deposit/month, otherwise $10 monthly fee), Premier Checking (interest-bearing, $25 fee waived with $15,000 combined balances), High-Yield Savings (sample 4.10% APY), Money Market (tiered rates), and Certificates of Deposit from 3 to 60 months.",
+      "tags": [
+        "account types",
+        "products",
+        "checking",
+        "savings",
+        "money market",
+        "cd"
+      ]
+    },
+    {
+      "id": "acct-fees",
+      "category": "Fees",
+      "question": "What are the monthly maintenance fees and how can I avoid them?",
+      "answer": "Everyday Checking has a $10 monthly fee, waived if you have at least $500 in qualifying direct deposits, keep a $1,500 minimum daily balance, or are age 17–24. Premier Checking has a $25 fee, waived with $15,000 in combined balances. High-Yield Savings has no monthly fee.",
+      "tags": [
+        "monthly fee",
+        "maintenance fee",
+        "waive",
+        "avoid fees",
+        "service charge"
+      ]
+    },
+    {
+      "id": "overdraft",
+      "category": "Fees",
+      "question": "How does overdraft work and what does it cost?",
+      "answer": "By default, debit card transactions that would overdraw your account are declined at no charge. If you opt in to Overdraft Coverage, we may pay the item and charge a $25 fee (max 2 per day). No fee is charged if you're overdrawn by $50 or less, or if you bring your balance positive by end of the next business day. You can also link a savings account for free Overdraft Protection transfers.",
+      "tags": [
+        "overdraft",
+        "nsf",
+        "insufficient funds",
+        "negative balance",
+        "overdraft fee",
+        "overdraft protection",
+        "spend more than I have",
+        "not enough money",
+        "overdrawn"
+      ]
+    },
+    {
+      "id": "routing",
+      "category": "Accounts",
+      "question": "What is your routing number and where do I find my account number?",
+      "answer": "FinPilot Bank's routing number (demo) is 000000000 for ACH and direct deposit, and the same for domestic wires. Your full account number is in the app under Accounts → select account → Account details, and on your monthly statement. Never share your online banking password with anyone asking for these numbers.",
+      "tags": [
+        "routing number",
+        "aba",
+        "account number",
+        "direct deposit form"
+      ]
+    },
+    {
+      "id": "direct-deposit",
+      "category": "Accounts",
+      "question": "How do I set up direct deposit?",
+      "answer": "In the app go to Accounts → Direct Deposit to download a pre-filled direct deposit form with your routing and account numbers. Give it to your employer's payroll team. Deposits usually start in 1–2 pay cycles, and funds are available on the payment date (sometimes up to 2 days early).",
+      "tags": [
+        "direct deposit",
+        "paycheck",
+        "payroll",
+        "early pay"
+      ]
+    },
+    {
+      "id": "mobile-deposit",
+      "category": "Deposits",
+      "question": "What are the mobile check deposit limits and funds availability?",
+      "answer": "Mobile check deposit limits are $5,000 per day and $25,000 per rolling 30 days for most customers. Deposits made before 9pm ET on a business day are processed that day. The first $225 is usually available the next business day, and the rest by the second business day. Write 'For mobile deposit at FinPilot Bank only' under your endorsement.",
+      "tags": [
+        "mobile deposit",
+        "check deposit",
+        "deposit limit",
+        "hold",
+        "funds availability",
+        "endorse"
+      ]
+    },
+    {
+      "id": "check-hold",
+      "category": "Deposits",
+      "question": "Why is there a hold on my deposit?",
+      "answer": "Holds can be placed on large deposits (over $5,525), new accounts (first 30 days), redeposited checks, or when we have reason to doubt collectability. The hold notice in the app shows the exact date funds will be available. Holds generally last no longer than 7 business days.",
+      "tags": [
+        "hold",
+        "deposit hold",
+        "pending deposit",
+        "funds not available",
+        "can't use deposited money",
+        "money not available yet",
+        "deposited funds unavailable"
+      ]
+    },
+    {
+      "id": "wire-domestic",
+      "category": "Transfers",
+      "question": "How do I send a wire transfer and what does it cost?",
+      "answer": "Domestic outgoing wires cost $25 ($0 for Premier Checking) and are sent the same business day if submitted before 4pm ET. International outgoing wires cost $45. Incoming wires are free. You'll need the recipient's name, address, bank routing/SWIFT code, and account number. Wires are hard to reverse, so verify details directly with the recipient.",
+      "tags": [
+        "wire",
+        "wire transfer",
+        "swift",
+        "international wire",
+        "send money",
+        "wire fee"
+      ]
+    },
+    {
+      "id": "ach-transfer",
+      "category": "Transfers",
+      "question": "How long do transfers to other banks take?",
+      "answer": "Standard external (ACH) transfers are free and arrive in 1–3 business days. Next-day ACH is available for $3. Transfers between your own FinPilot accounts are instant. Daily external transfer limit is $10,000 for most customers.",
+      "tags": [
+        "ach",
+        "external transfer",
+        "transfer time",
+        "move money",
+        "transfer limit"
+      ]
+    },
+    {
+      "id": "p2p",
+      "category": "Transfers",
+      "question": "Can I send money instantly to friends and family?",
+      "answer": "Yes. Use Pay a Person in the app to send money to anyone with a U.S. bank account using their email or mobile number. Enrolled recipients typically receive funds within minutes. Limits are $2,500 per day. Only send money to people you know and trust — these payments generally can't be cancelled once the recipient is enrolled.",
+      "tags": [
+        "p2p",
+        "send money",
+        "pay a person",
+        "instant payment",
+        "friends"
+      ]
+    },
+    {
+      "id": "card-lost",
+      "category": "Cards",
+      "question": "I lost my debit or credit card. What should I do?",
+      "answer": "Lock your card right away in the app (Cards → Lock card) — you can unlock it if you find it. If it's lost for good, choose Report lost or stolen to cancel it and order a replacement, which arrives in 5–7 business days (expedited 2-day delivery available for $15). If you see charges you didn't make, call the fraud line immediately.",
+      "tags": [
+        "lost card",
+        "stolen card",
+        "lock card",
+        "freeze card",
+        "replace card",
+        "missing card",
+        "lost my card",
+        "card stolen",
+        "lost debit card",
+        "lost credit card"
+      ]
+    },
+    {
+      "id": "card-declined",
+      "category": "Cards",
+      "question": "Why was my card declined?",
+      "answer": "Common reasons: insufficient available balance, reaching your daily purchase limit ($5,000 debit), the card is locked, an incorrect PIN/CVV/ZIP, an expired card, or a fraud-prevention hold on an unusual transaction. Check alerts in the app — if we flagged a transaction, you can confirm it with one tap and retry.",
+      "tags": [
+        "declined",
+        "card declined",
+        "card not working",
+        "transaction declined",
+        "card denied"
+      ]
+    },
+    {
+      "id": "card-activate",
+      "category": "Cards",
+      "question": "How do I activate my new card?",
+      "answer": "Activate in the app under Cards → Activate card, at any FinPilot ATM by making a PIN transaction, or by calling the number on the sticker. Your old card stops working once the new one is activated. Update the card number with any recurring merchants if it changed.",
+      "tags": [
+        "activate card",
+        "new card",
+        "card activation",
+        "pin"
+      ]
+    },
+    {
+      "id": "card-pin",
+      "category": "Cards",
+      "question": "How do I change or reset my PIN?",
+      "answer": "You can change your PIN in the app under Cards → Change PIN, or at any FinPilot ATM. We will never ask for your PIN by phone, text or email.",
+      "tags": [
+        "pin",
+        "change pin",
+        "forgot pin",
+        "reset pin"
+      ]
+    },
+    {
+      "id": "travel",
+      "category": "Cards",
+      "question": "Do I need to notify you before traveling abroad?",
+      "answer": "Travel notices aren't required — our fraud monitoring recognizes travel patterns. Still, make sure your mobile number is current so we can text you about unusual activity. Debit card foreign transactions have a 3% fee; FinPilot Voyager credit card has no foreign transaction fees.",
+      "tags": [
+        "travel",
+        "abroad",
+        "international",
+        "foreign transaction fee",
+        "travel notice"
+      ]
+    },
+    {
+      "id": "dispute",
+      "category": "Disputes & Fraud",
+      "question": "How do I dispute a transaction?",
+      "answer": "In the app, open the transaction and tap Dispute. Tell us why (not received, charged twice, incorrect amount, didn't authorize). For card disputes, report within 60 days of the statement date. We aim to resolve disputes within 10 business days; if it takes longer, we'll usually issue provisional credit while we investigate. Try contacting the merchant first for billing errors — it's often faster.",
+      "tags": [
+        "dispute",
+        "chargeback",
+        "wrong charge",
+        "charged twice",
+        "refund",
+        "unauthorized charge"
+      ]
+    },
+    {
+      "id": "fraud",
+      "category": "Disputes & Fraud",
+      "question": "I think my account was compromised or I see fraud. What do I do?",
+      "answer": "Call our 24/7 fraud line right away and lock your cards in the app. Change your online banking password and enable two-factor authentication. You're covered by our $0 Liability Guarantee for unauthorized card transactions reported promptly. Never share one-time passcodes — FinPilot will never call asking for them.",
+      "tags": [
+        "fraud",
+        "hacked",
+        "compromised",
+        "unauthorized",
+        "identity theft",
+        "suspicious activity"
+      ]
+    },
+    {
+      "id": "scam",
+      "category": "Disputes & Fraud",
+      "question": "How do I recognize and avoid scams?",
+      "answer": "Red flags: urgency or threats, requests to pay by gift card, wire, crypto or P2P, someone asking for your one-time passcode, or 'the bank' asking you to move money to a 'safe account'. FinPilot will never ask you to transfer money to protect it. If in doubt, hang up and call the number on the back of your card.",
+      "tags": [
+        "scam",
+        "phishing",
+        "fake call",
+        "impersonation",
+        "gift card",
+        "safe account",
+        "someone called",
+        "caller asked for my code",
+        "pretending to be the bank",
+        "verification code",
+        "suspicious call",
+        "text message"
+      ]
+    },
+    {
+      "id": "password",
+      "category": "Digital Banking",
+      "question": "I forgot my username or password. How can I reset it?",
+      "answer": "Tap Forgot username or password on the sign-in screen. We'll verify you with your card number or SSN plus a one-time code sent to your phone or email on file. After 5 failed sign-in attempts your access is locked for 30 minutes for security.",
+      "tags": [
+        "forgot password",
+        "reset password",
+        "username",
+        "locked out",
+        "can't log in",
+        "login"
+      ]
+    },
+    {
+      "id": "2fa",
+      "category": "Digital Banking",
+      "question": "How do I enable two-factor authentication?",
+      "answer": "Go to Profile → Security → Two-step verification. You can use text message codes, an authenticator app, or biometrics (Face ID / fingerprint) on a trusted device. We strongly recommend an authenticator app.",
+      "tags": [
+        "2fa",
+        "two factor",
+        "mfa",
+        "security",
+        "authenticator",
+        "biometric"
+      ]
+    },
+    {
+      "id": "statements",
+      "category": "Digital Banking",
+      "question": "Where can I find my statements and tax documents?",
+      "answer": "Statements for the last 7 years are under Accounts → Statements & Documents. Tax forms (1099-INT for interest over $10, 1098 for mortgage interest) are available there by January 31 each year. You can switch to paperless statements in the same section.",
+      "tags": [
+        "statement",
+        "tax form",
+        "1099",
+        "1098",
+        "documents",
+        "paperless"
+      ]
+    },
+    {
+      "id": "alerts",
+      "category": "Digital Banking",
+      "question": "How do I set up account alerts?",
+      "answer": "Go to Profile → Alerts. You can get push, text or email alerts for low balance, large transactions, deposits, card-not-present purchases, and security events. Security alerts are always on.",
+      "tags": [
+        "alerts",
+        "notifications",
+        "low balance alert",
+        "text alerts"
+      ]
+    },
+    {
+      "id": "savings-apy",
+      "category": "Savings & CDs",
+      "question": "What interest rate does your savings account pay?",
+      "answer": "High-Yield Savings currently earns a sample 4.10% APY on all balances with no minimum and no monthly fee. Rates are variable and may change after account opening. Interest compounds daily and is credited monthly.",
+      "tags": [
+        "apy",
+        "interest rate",
+        "savings rate",
+        "high yield",
+        "savings account"
+      ]
+    },
+    {
+      "id": "cd",
+      "category": "Savings & CDs",
+      "question": "What are your CD rates and early withdrawal penalties?",
+      "answer": "Sample CD rates: 6-month 4.50% APY, 12-month 4.35% APY, 24-month 4.00% APY, 60-month 3.75% APY. Minimum deposit $1,000. Early withdrawal penalty is 90 days of interest for terms of 12 months or less and 180 days for longer terms. CDs renew automatically with a 10-day grace period.",
+      "tags": [
+        "cd",
+        "certificate of deposit",
+        "cd rates",
+        "early withdrawal",
+        "penalty",
+        "term deposit"
+      ]
+    },
+    {
+      "id": "fdic",
+      "category": "Savings & CDs",
+      "question": "Is my money FDIC insured?",
+      "answer": "Deposit accounts at a real FDIC-member bank are insured up to $250,000 per depositor, per insured bank, for each ownership category. (FinPilot Bank is a fictional demo institution.) Investment products like stocks, bonds and mutual funds are not FDIC insured.",
+      "tags": [
+        "fdic",
+        "insurance",
+        "insured",
+        "safe",
+        "deposit insurance"
+      ]
+    },
+    {
+      "id": "cc-apply",
+      "category": "Credit Cards",
+      "question": "How do I apply for a credit card and what cards do you offer?",
+      "answer": "We offer: Cash Back Card (1.5% on everything, $0 annual fee), Voyager Travel Card (2x points on travel & dining, no foreign transaction fees, $95 annual fee), and Balance Builder (0% intro APR for 18 months on balance transfers). Apply online; most decisions are instant and we'll show you if you're pre-qualified without affecting your credit score.",
+      "tags": [
+        "credit card",
+        "apply",
+        "cash back",
+        "rewards",
+        "travel card",
+        "annual fee"
+      ]
+    },
+    {
+      "id": "cc-apr",
+      "category": "Credit Cards",
+      "question": "What is APR and how is credit card interest calculated?",
+      "answer": "APR (Annual Percentage Rate) is the yearly cost of borrowing. Card interest uses the average daily balance: we divide the APR by 365 to get a daily rate, apply it to each day's balance, and add it up for the billing cycle. If you pay your statement balance in full by the due date, you pay no interest on purchases (grace period). Sample purchase APR is 19.99%–28.99% variable.",
+      "tags": [
+        "apr",
+        "interest",
+        "credit card interest",
+        "grace period",
+        "daily balance"
+      ]
+    },
+    {
+      "id": "cc-payment",
+      "category": "Credit Cards",
+      "question": "What happens if I only pay the minimum or miss a payment?",
+      "answer": "The minimum payment is the greater of $35 or 1% of the balance plus interest and fees. Paying only the minimum keeps you in good standing but costs much more interest over time. A late payment incurs a fee of up to $40, and payments 30+ days late may be reported to credit bureaus. Set up AutoPay to avoid missing a due date.",
+      "tags": [
+        "minimum payment",
+        "late payment",
+        "missed payment",
+        "late fee",
+        "autopay",
+        "due date"
+      ]
+    },
+    {
+      "id": "cc-limit",
+      "category": "Credit Cards",
+      "question": "How can I increase my credit limit?",
+      "answer": "Request an increase in the app under Cards → Request credit limit increase. We'll ask for your current income and housing payment. Most requests get an instant decision and use a soft inquiry. We also review accounts periodically for automatic increases.",
+      "tags": [
+        "credit limit",
+        "limit increase",
+        "raise limit"
+      ]
+    },
+    {
+      "id": "balance-transfer",
+      "category": "Credit Cards",
+      "question": "How does a balance transfer work?",
+      "answer": "With Balance Builder you can move balances from other cards and pay 0% intro APR for 18 months. There's a 3% transfer fee (min $5). Transfers must be made within 120 days of account opening. After the intro period, the standard variable APR applies to any remaining balance.",
+      "tags": [
+        "balance transfer",
+        "0% apr",
+        "transfer debt",
+        "intro apr"
+      ]
+    },
+    {
+      "id": "credit-score",
+      "category": "Credit",
+      "question": "How can I check and improve my credit score?",
+      "answer": "FinPilot customers get a free FICO® Score in the app (checking it doesn't hurt your score). Biggest factors: payment history (35%), amounts owed / utilization (30%), length of history (15%), new credit (10%), credit mix (10%). Paying on time and keeping utilization under 30% (ideally under 10%) help most. You're entitled to free credit reports at AnnualCreditReport.com.",
+      "tags": [
+        "credit score",
+        "fico",
+        "improve credit",
+        "credit report",
+        "utilization"
+      ]
+    },
+    {
+      "id": "mortgage",
+      "category": "Loans",
+      "question": "What mortgage options do you offer?",
+      "answer": "We offer 30-year and 15-year fixed-rate mortgages, 7/6 and 10/6 adjustable-rate mortgages, FHA and VA loans, and jumbo loans. Down payments start at 3% for eligible first-time buyers. Get pre-approved online in about 15 minutes — pre-approval uses a hard credit inquiry. Ask me to estimate a monthly payment for any loan amount and rate.",
+      "tags": [
+        "mortgage",
+        "home loan",
+        "30 year",
+        "15 year",
+        "arm",
+        "fha",
+        "va",
+        "pre-approval",
+        "first time buyer"
+      ]
+    },
+    {
+      "id": "refinance",
+      "category": "Loans",
+      "question": "Should I refinance my mortgage?",
+      "answer": "Refinancing can make sense when you can lower your rate enough to recover closing costs (typically 2–5% of the loan) within the time you plan to stay in the home. Divide total closing costs by the monthly savings to get your break-even point in months. I can estimate new payments, but a loan officer can give personalized guidance.",
+      "tags": [
+        "refinance",
+        "refi",
+        "lower rate",
+        "closing costs",
+        "break even",
+        "refinancing",
+        "refi my home"
+      ]
+    },
+    {
+      "id": "auto-loan",
+      "category": "Loans",
+      "question": "What are your auto loan rates and terms?",
+      "answer": "Sample auto loan APRs start at 5.49% for new vehicles and 5.99% for used, with terms from 24 to 72 months. Autopay from a FinPilot checking account gets a 0.25% rate discount. You can get pre-approved before visiting the dealer.",
+      "tags": [
+        "auto loan",
+        "car loan",
+        "vehicle",
+        "car financing"
+      ]
+    },
+    {
+      "id": "personal-loan",
+      "category": "Loans",
+      "question": "Do you offer personal loans?",
+      "answer": "Yes — unsecured personal loans from $3,000 to $50,000, terms of 12 to 60 months, sample APRs from 7.99% to 24.99% based on credit. No origination fee and no prepayment penalty. Funds can arrive as soon as the next business day.",
+      "tags": [
+        "personal loan",
+        "debt consolidation",
+        "unsecured loan",
+        "borrow"
+      ]
+    },
+    {
+      "id": "loan-payment",
+      "category": "Loans",
+      "question": "How do I make a loan payment or pay off my loan early?",
+      "answer": "Pay in the app under Loans → Make a payment, set up AutoPay, or mail a check. There are no prepayment penalties on FinPilot personal, auto or mortgage loans — extra payments go to principal when you choose 'Apply to principal'. Request a payoff quote under Loans → Payoff amount.",
+      "tags": [
+        "loan payment",
+        "pay loan",
+        "pay off early",
+        "payoff",
+        "prepayment",
+        "extra payment"
+      ]
+    },
+    {
+      "id": "hardship",
+      "category": "Loans",
+      "question": "I'm having trouble making payments. Can you help?",
+      "answer": "Yes — please reach out early. Our Customer Assistance team can discuss options such as payment deferral, modified payment plans, or waived fees depending on your situation. Call the support line and ask for Customer Assistance. You can also get free counseling from a HUD-approved housing counselor or a nonprofit credit counselor.",
+      "tags": [
+        "hardship",
+        "can't pay",
+        "financial difficulty",
+        "deferral",
+        "forbearance",
+        "help paying",
+        "lost my job",
+        "can't make my payments",
+        "behind on payments",
+        "unemployed"
+      ]
+    },
+    {
+      "id": "close-account",
+      "category": "Accounts",
+      "question": "How do I close my account?",
+      "answer": "Move any recurring payments and direct deposits first, then transfer your remaining balance. Call support or visit a branch to close the account; you'll need to verify your identity. Accounts closed within 90 days of opening may be charged a $25 early closure fee.",
+      "tags": [
+        "close account",
+        "cancel account",
+        "closing"
+      ]
+    },
+    {
+      "id": "joint-beneficiary",
+      "category": "Accounts",
+      "question": "How do I add a joint owner or a beneficiary?",
+      "answer": "Beneficiaries (payable-on-death) can be added in the app under Accounts → Account settings → Beneficiaries. Adding a joint owner requires both people to verify identity — start online and the co-owner will get an invitation to complete their part.",
+      "tags": [
+        "joint account",
+        "beneficiary",
+        "pod",
+        "add owner",
+        "co-owner"
+      ]
+    },
+    {
+      "id": "business",
+      "category": "Business",
+      "question": "Do you offer business accounts?",
+      "answer": "Yes. Business Essentials Checking ($0 monthly fee with $2,500 average balance), Business Interest Checking, merchant services, and small business lines of credit. To open you'll need your EIN, formation documents, and ID for anyone with 25%+ ownership.",
+      "tags": [
+        "business account",
+        "small business",
+        "ein",
+        "merchant",
+        "llc",
+        "open business account",
+        "company account",
+        "sole proprietor",
+        "llc account"
+      ]
+    },
+    {
+      "id": "investing",
+      "category": "Investing",
+      "question": "Do you offer investment or retirement accounts?",
+      "answer": "FinPilot Invest offers self-directed brokerage accounts, Traditional and Roth IRAs, and managed portfolios. Investments are not FDIC insured, may lose value, and are not bank guaranteed. For personalized investment advice, schedule a call with a licensed financial advisor.",
+      "tags": [
+        "invest",
+        "ira",
+        "roth",
+        "brokerage",
+        "retirement",
+        "stocks",
+        "401k"
+      ]
+    },
+    {
+      "id": "atm",
+      "category": "Branches & ATMs",
+      "question": "Where can I find an ATM and are there ATM fees?",
+      "answer": "Use the ATM & Branch Locator in the app. FinPilot ATMs are free. Out-of-network ATMs cost $2.50 per withdrawal plus any operator fee; Premier Checking refunds up to 4 out-of-network fees per month. Daily ATM withdrawal limit is $1,000.",
+      "tags": [
+        "atm",
+        "atm fee",
+        "cash withdrawal",
+        "branch locator",
+        "withdrawal limit"
+      ]
+    },
+    {
+      "id": "hours",
+      "category": "Contact",
+      "question": "What are your customer service hours and how do I contact support?",
+      "answer": "Phone support is available Mon–Fri 8am–8pm ET and Sat 9am–5pm ET. The fraud line is open 24/7. You can also send a secure message in the app, or ask me to create a support ticket and a specialist will follow up.",
+      "tags": [
+        "contact",
+        "phone number",
+        "customer service",
+        "hours",
+        "talk to someone",
+        "support"
+      ]
+    },
+    {
+      "id": "transfer-limits",
+      "category": "Transfers",
+      "question": "Can I increase my transfer limits?",
+      "answer": "Transfer limits are set based on account history and relationship. Customers with accounts open 90+ days in good standing can request higher external transfer or Pay a Person limits by calling support. For large one-time payments, a wire transfer is often the best option.",
+      "tags": [
+        "increase limit",
+        "transfer limit",
+        "higher limit",
+        "raise transfer limit",
+        "daily transfer limit increase",
+        "raise my limit"
+      ]
+    },
+    {
+      "id": "stop-payment",
+      "category": "Accounts",
+      "question": "How do I stop payment on a check or cancel a recurring payment?",
+      "answer": "Place a stop payment in the app under Accounts → Stop payment ($30 fee; free for Premier Checking). It's effective for 6 months. To stop a recurring debit card or ACH payment, contact the merchant first and then tell us so we can block future charges.",
+      "tags": [
+        "stop payment",
+        "cancel check",
+        "recurring payment",
+        "cancel subscription",
+        "block payment"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  ["is there a charge to keep my checking account open", "acct-fees"],
+  ["my paycheck — can it arrive early?", "direct-deposit"],
+  ["daily limit for depositing checks by phone camera", "mobile-deposit"],
+  ["fee for an incoming wire", "wire-domestic"],
+  ["card got swallowed / missing, need a new one", "card-lost"],
+  ["purchase was declined but I have money", "card-declined"],
+  ["merchant never delivered my order, want my money back", "dispute"],
+  ["someone texted me asking to move money to a safe account", "scam"],
+  ["account locked after too many login attempts", "password"],
+  ["authenticator app setup", "2fa"],
+  ["interest rate on 12 month cd", "cd"],
+  ["what's the cash back card annual fee", "cc-apply"],
+  ["late fee on credit card", "cc-payment"],
+  ["what affects my credit score most", "credit-score"],
+  ["how much down payment for a mortgage", "mortgage"],
+  ["car financing term length", "auto-loan"],
+  ["get a payoff quote for my loan", "loan-payment"],
+  ["make my wife a joint owner", "joint-beneficiary"],
+  ["max I can take out of an ATM per day", "atm"],
+  ["what number do I call for help", "hours"]
+]
